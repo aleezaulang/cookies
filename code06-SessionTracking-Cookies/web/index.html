@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BPI Forex Servlet Lifecycle Demo</title>
+</head>
+<body>
+	<img src='images/forex.jpg'/>
+	<h2>BPI Forex Servlet Lifecycle Demo</h2>
+	<fieldset>
+		<legend>Forex Form</legend>
+		<form action ="process.action">
+			<p>Philippine Peso Amount: Php
+				<input type='number' name='pesoAmount' min="500" max="100000"/> 			
+			</p>
+			<p> Select Currency Type: 
+				<select name="currencyTarget">
+					<option value="USD">US$</option>
+					 <option value="EUR">&euro;URO</option>
+					 <option value="JPY">&yen;EN</option>
+				</select>
+			</p>	
+			<input type="submit" value="Convert Currency"/>&nbsp;&nbsp;&nbsp;
+			<input type='reset'/>
+		</form>
+	</fieldset>
+	<p><i>&copy; 2017 Bank of the Philippine Islands. All rights reserved.</i></p>
+</body>
+</html>

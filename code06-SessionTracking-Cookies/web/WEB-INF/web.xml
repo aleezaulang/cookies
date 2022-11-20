@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>code02-Servlet-Lifecycle-Forex-SRP-MVC-ServletChaining</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ConvertForexServletAction</servlet-name>
+  	<servlet-class>forex.controller.ConvertForexServletAction</servlet-class>
+  </servlet>
+  
+  <servlet>  
+  	<servlet-name>DisplayViewServlet</servlet-name>
+  	<servlet-class>forex.view.DisplayViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet>  
+  	<servlet-name>ErrorPageServlet</servlet-name>
+  	<servlet-class>forex.view.ErrorPageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ConvertForexServletAction</servlet-name>
+  	<url-pattern>/process.action</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DisplayViewServlet</servlet-name>
+  	<url-pattern>/display.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ErrorPageServlet</servlet-name>
+  	<url-pattern>/error.action</url-pattern>
+  </servlet-mapping>
+</web-app>
